@@ -1,14 +1,14 @@
 import streamlit as st
 
 # 画面の設定
-st.set_page_config(page_title="20分割計算機", layout="centered")
+st.set_page_config(page_title="20分割tool", layout="centered")
 
-st.title("🔢 20分割計算機")
+st.title("🔢 20分割tool")
 
 # スタイル調整（数字を大きく表示するため）
 st.markdown("""
     <style>
-    .big-font { font-size:50px !important; font-weight: bold; color: #007bff; }
+    .big-font { font-size:80px !important; font-weight: bold; color: #007bff; }
     </style>
     """, unsafe_allow_html=True)
 
