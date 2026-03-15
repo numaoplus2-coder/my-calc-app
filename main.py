@@ -8,12 +8,12 @@ st.title("🔢 20分割tool")
 # スタイル調整（数字を大きく表示するため）
 st.markdown("""
     <style>
-    .big-font { font-size:80px !important; font-weight: bold; color: #007bff; }
+    .big-font { font-size:100px !important; font-weight: bold; color: #007bff; }
     </style>
     """, unsafe_allow_html=True)
 
 # 入力エリア
-val = st.number_input("数値を入力してください", min_value=0, step=1, value=0)
+val = st.number_input("数値を入力してください", min_value=0, step=1)
 
 # 計算ロジック
 sho = val // 20
@@ -21,7 +21,7 @@ amari = val % 20
 
 # 結果表示
 st.write("---")
-st.subheader("計算結果 (商 - 余り)")
+st.subheader("計算結果 (ケース - 玉)")
 st.markdown(f'<p class="big-font">{sho} - {amari}</p>', unsafe_allow_html=True)
 
 # 使い方の説明
